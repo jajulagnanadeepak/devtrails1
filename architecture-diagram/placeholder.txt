@@ -1,1 +1,46 @@
-System architecture diagram will be added here.
+1. Worker Mobile App
+2. Backend API (Node.js)
+3. AI Risk Engine (Python)
+4. Weather API
+5. AQI API
+6. Delivery Platform Data (Swiggy/Zomato)
+7. Claim Trigger System
+8. Payment Gateway (UPI)
+9. Database (PostgreSQL)
+
+Worker App
+   ↓
+Backend API
+   ↓
+AI Risk Engine
+   ↓
+Weather API + AQI API
+   ↓
+Risk Evaluation
+   ↓
+Claim Trigger System
+   ↓
+Payment Gateway (UPI)
+   ↓
+Worker gets ₹ payout
+
+Architecture Diagram:
+[ Worker Mobile App ]
+          ↓
+     [ Backend API ]
+          ↓
+   ---------------------
+   |                   |
+[ AI Risk Engine ]   [ Database ]
+   |                   |
+   ↓                   ↓
+[ Weather API ]   [ Worker Data ]
+[ AQI API ]
+   ↓
+[ Risk Detection ]
+   ↓
+[ Claim Trigger System ]
+   ↓
+[ Payment Gateway (UPI) ]
+   ↓
+[ Worker Receives Money ]
