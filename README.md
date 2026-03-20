@@ -1,104 +1,119 @@
-# GigGuard AI
-### Protecting Gig Workers from Income Loss using AI-Powered Parametric Insurance
+# EarnShield AI  
+### Smart Parametric Income Protection for Gig Workers  
+
+> **Team Alphabitrix**  
+> Protecting delivery partners from income loss caused by weather and environmental disruptions.
 
 ---
 
-## 🚨 Problem
+## Problem Statement
 
-Millions of gig workers such as food delivery partners depend on daily deliveries for their income.
+Gig workers such as food delivery partners depend completely on daily orders for income.  
+Events like **heavy rain, extreme heat, severe air pollution, and city curfews** can stop them from working.
 
-However, events like:
-
-- Heavy rain
-- Extreme heat
-- Severe air pollution
-- Government curfews
-
-can stop them from working.
-
-When these disruptions occur, workers lose their daily income and currently have **no financial protection**.
-
-Platforms like Swiggy and Zomato do not compensate workers for these external disruptions.
+When these disruptions happen, workers lose their income for the day, and most platforms do not provide immediate financial protection.
 
 ---
 
-## 👤 Target Persona
+## Our Solution
 
-Food delivery partners working on platforms like Swiggy and Zomato in Hyderabad.
+**EarnShield AI** is an AI-powered parametric insurance platform built for gig workers.
 
-**Example Worker**
+Workers subscribe to a **small weekly insurance plan**.  
+When predefined disruption conditions are met, the system automatically triggers payouts without requiring manual claims.
 
-Rahul  
-Age: 27  
-Works 10 hours daily delivering food orders.
-
-His income depends entirely on completed deliveries.  
-If heavy rain or extreme heat occurs, orders drop and he earns **nothing that day**.
+This ensures **fast, transparent, and reliable financial support**.
 
 ---
 
-## 💡 Proposed Solution
+## Key Highlights
 
-GigGuard AI is an **AI-powered parametric insurance platform** designed specifically for gig workers.
-
-Workers subscribe to a **small weekly insurance plan**.
-
-When predefined events occur (such as heavy rain or extreme heat), the system automatically detects the event and **triggers an instant payout**.
-
-Workers receive compensation directly through **UPI**, without filing claims.
+- AI-based risk prediction
+- Dynamic weekly premium calculation
+- Automatic claim trigger system
+- Real-time disruption monitoring
+- Instant payout through UPI
+- Fraud detection support
 
 ---
 
-## ⚡ Parametric Triggers
+## Target Users
 
-| Event | Condition | Payout |
-|------|------|------|
-| Heavy Rain | Rainfall > 50mm | ₹300 |
+Our initial focus is:
+
+- Swiggy delivery partners
+- Zomato delivery partners
+- Gig workers in Hyderabad
+
+Future expansion:
+
+- Bike taxi workers
+- Courier partners
+- Hyperlocal service workers
+
+---
+
+## Parametric Trigger Model
+
+| Event | Trigger Condition | Payout |
+|-------|-------------------|--------|
+| Heavy Rain | Rainfall > 50 mm | ₹300 |
 | Extreme Heat | Temperature > 45°C | ₹200 |
 | Severe Pollution | AQI > 400 | ₹150 |
-| City Curfew | Government Alert | ₹400 |
-
-These triggers are verified using **real-time weather and public data APIs**.
+| City Curfew | Official government alert | ₹400 |
 
 ---
 
-## 🤖 AI Usage
+## How AI Helps
 
-Artificial Intelligence is used for:
+### 1. Risk Prediction
+AI evaluates area-based disruption probability using weather history, pollution levels, and risk zones.
 
-**1️⃣ Risk Prediction**  
-AI analyzes weather history, flood zones, and pollution patterns to estimate risk levels.
+### 2. Dynamic Premium Pricing
+Premiums are adjusted based on worker location and exposure to disruptions.
 
-**2️⃣ Dynamic Premium Pricing**  
-Weekly premiums are adjusted based on the risk level of the worker’s location.
-
-**3️⃣ Fraud Detection**  
-AI detects suspicious behavior such as fake locations or repeated abnormal claims.
+### 3. Fraud Detection
+The system detects abnormal claims, suspicious location activity, and repeated misuse patterns.
 
 ---
 
-## 🛠 Tech Stack
+## Website Features
 
-**Frontend**  
-React.js + Tailwind CSS
-
-**Backend**  
-Node.js
-
-**AI Layer**  
-Python
-
-**Database**  
-PostgreSQL
+- Worker onboarding
+- Weekly insurance plan display
+- Risk score visibility
+- Protected earnings dashboard
+- Automatic claim trigger alerts
+- Payout confirmation screen
+- Claim and disruption history
 
 ---
 
-## 🌍 Impact
+## Tech Stack
 
-GigGuard AI provides financial protection to gig workers during unexpected disruptions.
+**Frontend:** React.js + Tailwind CSS  
+**Backend:** Node.js  
+**AI Layer:** Python  
+**Database:** PostgreSQL  
+**APIs:** Weather API, AQI API, Government Alert Data  
+**Payments:** UPI Integration
 
-This helps:
+---
 
-- Reduce income uncertainty
-- Improve worker safety
-- Build a more reliable and fair gig economy
+## System Architecture
+
+Worker / User
+     ↓
+Frontend Website
+     ↓
+Backend API
+     ↓
+AI Risk Engine
+     ↓
+Weather API / AQI API / Government Alerts
+     ↓
+Parametric Trigger Engine
+     ↓
+Payment Gateway / UPI
+     ↓
+Instant Worker Payout
